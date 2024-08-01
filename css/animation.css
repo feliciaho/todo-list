@@ -1,0 +1,58 @@
+/* 客製Animation */
+.moveTop {
+  -webkit-animation: moveTop 2s linear alternate infinite;
+  -moz-animation: moveTop 2s linear alternate infinite;
+  -o-animation: moveTop 2s linear alternate infinite;
+  -ms-animation: moveTop 2s linear alternate infinite;
+  animation: moveTop 2s linear alternate infinite;
+}
+
+@-webkit-keyframes moveTop {
+  0% {
+    -webkit-transform: translate(0, -10px);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 10px);
+  }
+}
+
+@-moz-keyframes moveTop {
+  0% {
+    -moz-transform: translate(0, -10px);
+  }
+
+  100% {
+    -moz-transform: translate(0, 10px);
+  }
+}
+
+@-ms-keyframes moveTop {
+  0% {
+    -ms-transform: translate(0, -10px);
+  }
+
+  100% {
+    -ms-transform: translate(0, 10px);
+  }
+}
+
+@-o-keyframes moveTop {
+  0% {
+    -o-transform: translate(0, -10px);
+  }
+
+  100% {
+    -o-transform: translate(0, 10px);
+  }
+}
+
+@keyframes moveTop {
+  0% {
+    transform: translate(0, -10px);
+  }
+
+  100% {
+    transform: translate(0, 10px);
+  }
+}
