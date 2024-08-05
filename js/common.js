@@ -29,10 +29,15 @@ function showData(data){
 // 並用setItem從新將值放回
 document.querySelector(".list").addEventListener("click", deleteText);
 function deleteText(e){
+    // 讓a連結不要一直重整頁面
+    e.preventDefault();
     if(e.target.nodeName!=="A"){
         return
     };
     var numDelete = e.target.dataset.listnum;
     data.splice(numDelete,1);
+    // 先將locallStorage資料刪除回傳
     localStorage.setItem("thing",JSON.stringify(data));
+    // 重新將localstorage資料放回
+    showData(data);
 }
