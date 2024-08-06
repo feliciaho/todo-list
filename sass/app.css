@@ -153,6 +153,9 @@ body section .textInput button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+body section ul {
+  width: 400px;
+}
 body section ul li {
   text-align: left;
   line-height: 1.8;
